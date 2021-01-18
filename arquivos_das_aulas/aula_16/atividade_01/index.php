@@ -28,13 +28,14 @@
             echo "<p> print_r: ";
             print_r($x);
 
-            $x2 = array(14, 16, 2, 12,);
+            $x2 = array(14, 16, 2, 12);
             echo "<p> print_r: ";
             print_r($x2);
 
-            //var dump e var_export
+            //var dump e var_export, formas diferentes de mostrar a estrutura de um array
             echo "<p> var_dump: ";
             var_dump($x);
+
             echo "<p> var_export: ";
             var_export($x2);
 
