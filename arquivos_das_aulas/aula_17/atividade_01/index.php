@@ -53,12 +53,6 @@
             $teste = "eu amo estudar fisica";
             echo "<p>str_replace: " .str_replace("amo", "odeio", $teste) . "</p>";
             
-
-
-
-
-
-           
         
         ?>
     </div>
