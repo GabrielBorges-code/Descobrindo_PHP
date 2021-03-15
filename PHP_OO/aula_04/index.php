@@ -4,29 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Aula 02 - POO</title>
+    <title>Aula 04 - POO</title>
 
 </head>
 <body>
     <pre>
-        <?php
-            
+       <?php
             require_once 'Caneta.php';
+            // forma padrão de acesso
+            // $c1 = new Caneta();
+            //definindo valores do contrutor
+            $c1 = new Caneta("Bic", "Preta", 0.8);
+            $c2 = new Caneta("Compactor", "Verde", 0.5);
 
-            $caneta1 = new Caneta;
+            print_r($c1);
+            print_r($c2);
+
+            // $c2 = new Caneta();
             
-            $caneta1 -> modelo = "BIC cristal";
-            $caneta1 -> cor = "Preto";
-            
-            $caneta1 -> rabiscar();
+            // //é possível fazer o set de duas formas (depende da visibilidade do atributo)
+            // $c1->setModelo("Bic"); 
+            // $c2->modelo = "Compactor";
 
-            //Ã© possivel acessar variÃ¡veis privadas atravÃ©s de funÃ§Ãµes pÃºblicas
-            $caneta1 -> tampar();
+            // //aqui não é possível pois esá privado
+            // $c1->setPonta(0.5);
+            // $c2->setPonta(0.8);
 
-            print_r($caneta1);
+            // echo "eu tenho uma caneta (c1) modelo " . $c1->getModelo() . " de ponta " . $c1->getPonta();
 
+       ?>
 
-        ?>
     </pre>
 </body>
 </html>
