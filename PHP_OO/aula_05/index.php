@@ -9,14 +9,27 @@
 <body>
     <pre>
         <?php
+            
             require_once 'Conta.php';
-            // $conta1 = new Conta("123", "Poupança", "Gabriel");
-            $conta1 = new Conta();
+            echo "<br/>";
 
+            $conta1 = new Conta("123", "Gabriel");
+            
             $conta1->abrirConta("Poupança");
+            $conta1->depositar(200);
+            $conta1->pagarMensalidade();
+            // $conta1->sacar(151);
+            // $conta1->fecharConta();
+            
+            echo "<br/>";
 
-            print_r($conta1);
+            echo "Dono da Conta " . $conta1->getDonoConta() . "<br/>";
+            echo "Número da Conta " . $conta1->getNumeroConta() . "<br/>";
+            echo "Saldo da Conta " . $conta1->getSaldoConta() . "<br/>";
+            echo "Tipo da Conta " . $conta1->getTipoConta() . "<br/>";
+            echo "Status da Conta " . $conta1->getStatusConta() . "<br/>";
 
+        
 
         ?>
     
